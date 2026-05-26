@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Large datasets and processed outputs
+datasets/
+processed/
+
+# API keys and sensitive files
+kaggle.json
+.kaggle/
+
+# Python caching and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# IDE configurations
+.vscode/
+.idea/
+.DS_Store
