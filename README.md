@@ -1,6 +1,6 @@
 # Skin Cancer Detection - Dataset Preparation Pipeline
 
-A standalone Python pipeline designed to preprocess, balance, and split skin lesion images from the HAM10000 and ISIC 2018 datasets, preparing them for deep learning model training.
+A Jupyter notebook-based pipeline designed to preprocess, balance, and split skin lesion images from the HAM10000 and ISIC 2018 datasets, preparing them for deep learning model training.
 
 ## Table of Contents
 - [Project Architecture](#project-architecture)
@@ -28,7 +28,7 @@ Skin-Cancer/
 │   ├── train/                                  ← Balanced training split (37,548 images)
 │   ├── val/                                    ← Validation split (1,001 images)
 │   └── test/                                   ← Test split (1,002 images)
-├── fix_dataset.py                              ← Pipeline execution script
+├── dataset.ipynb                               ← Pipeline execution notebook
 ├── DATASET.md                                  ← Detailed dataset specifications
 ├── .gitignore
 └── README.md                                   ← This file
@@ -73,12 +73,10 @@ The script uses the Kaggle API to download the missing Ground Truth files.
 
 ## How to Run
 
-Execute the standalone pipeline:
-```bash
-python fix_dataset.py
-```
+Open and execute the Jupyter Notebook cells inside:
+[dataset.ipynb](./dataset.ipynb)
 
-Upon completion, you will see a console printout showing the data distribution and class balance, and the final outputs will be written to the `processed/` directory.
+You can run it using VS Code's built-in notebook editor, JupyterLab, or Jupyter Notebook. Upon running all cells, the data distribution and class balance will be shown, and the final training-ready outputs will be written to the `processed/` directory.
 
 ---
 
